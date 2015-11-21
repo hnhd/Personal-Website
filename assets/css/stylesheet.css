@@ -1,5 +1,5 @@
 body {
-	background-image: url("http://41.media.tumblr.com/ef389c74e2ff1ca4beef599575c5dbab/tumblr_n6t3zfMnf81sinakeo1_1280.jpg");
+	background-image: url("../images/painting.jpeg");
 	background-size: cover;
 	background-color: #F4F0F5;
 	margin: 0px;
@@ -10,7 +10,7 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 62px;
-	background-color: #3F3536;
+	background-color: ;
 	z-index: 1;
 	opacity: .9;
 }
@@ -20,9 +20,9 @@ body {
 }
 
 .navbar li {
-	color: white;
+	color: #EAEAE1;
 	position: relative;
-	background-color: #3F3536;
+	background-color: ;
 	font: 18px 'Lato';
 	padding: 20px;
 	margin: -16px 0px 0px;
@@ -31,38 +31,7 @@ body {
 }
 
 .navbar li:hover {
-	color: #F4F0F5;
-	background-color: #34262B;
-}
-
-.circle-button {
-	left: 620px;
-	top: -100px;
-	position: fixed;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background-color: #34262B;
-	z-index: 1;
-}
-
-.circle-button-two {
-	left: 630px;
-	top: -90px;
-	position: fixed;
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-	background-color: #F4F0F5;
-	z-index: 1;
-}
-
-.container {
-	position: absolute;
-	width: 100%;
-	height: 1000px;
-	z-index: 0;
-	background-color: ;
+	color: rgba(234, 234, 225, .5);
 }
 
 
@@ -83,4 +52,19 @@ body {
 .text {
 	padding: 20px;
 	font: 18px 'Lato';
+}
+
+.name {
+	font: 60px 'Dancing Script';
+	color: #EaEaE1;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;	
+	text-align: center;
+	z-index: 1;
+}
+
+.name img {
+	width: 400px;
 }
