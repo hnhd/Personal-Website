@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Aileron;
+    src: url("../fonts/aileron/Aileron-Light.otf");
+}
+
 body {
 	background-image: url("../images/painting.jpeg");
 	background-size: cover;
@@ -23,11 +28,13 @@ body {
 	color: #EAEAE1;
 	position: relative;
 	background-color: ;
-	font: 18px 'Lato';
+	font: 13px 'Aileron';
 	padding: 20px;
 	margin: -16px 0px 0px;
 	list-style: none;
 	float: right;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
 }
 
 .navbar li:hover {
@@ -55,16 +62,19 @@ body {
 }
 
 .name {
-	font: 60px 'Dancing Script';
-	color: #EaEaE1;
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	position: absolute;	
-	text-align: center;
 	z-index: 1;
 }
 
 .name img {
 	width: 400px;
+}
+
+.name:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}geTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
