@@ -10,10 +10,7 @@ body {
 	margin: 0px;
 }
 
-a {
-	text-decoration:none;
-	color: none;
-}
+
 
 .navbar {
 	position: fixed;
@@ -22,49 +19,27 @@ a {
 	height: 62px;
 	background-color: ;
 	z-index: 1;
-	opacity: .9;
-}
-
-.navbar ul {
-
 }
 
 .navbar li {
-	color: #EAEAE1;
 	position: relative;
-	background-color: ;
-	font: 13px 'Aileron';
 	padding: 20px;
 	margin: -16px 0px 0px;
 	list-style: none;
 	float: right;
-	text-transform: uppercase;
-	letter-spacing: 3.5px;
 }
 
-.navbar li:hover {
+.navbar li a {
+	color: #EAEAE1;
+	font: 13px 'Aileron';
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	text-decoration:none;
+}
+.navbar li a:hover {
 	color: rgba(234, 234, 225, .5);
 }
 
-
-.post {
-	position: relative;
-	left: 50%;
-	margin: 20px 20px 0px;
-	padding: 20px;
-	height: auto;
-	width: 987px;
-	transform: translateX(-50%);
-	background-color: white;
-	opacity: ;
-	border-radius: 5px;
-	box-shadow: 0px 0px 5px #edeae5;
-}
-
-.text {
-	padding: 20px;
-	font: 18px 'Lato';
-}
 
 .name {
 	left: 50%;
