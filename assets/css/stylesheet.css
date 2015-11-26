@@ -2,23 +2,21 @@
     font-family: Aileron;
     src: url("../fonts/aileron/Aileron-Light.otf");
 }
-
 body {
 	background-image: url("../images/painting.jpeg");
 	background-size: cover;
-	background-color: #F4F0F5;
+	background-color: #6C90A8;
 	margin: 0px;
 }
-
 .navbar {
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	height: 62px;
-	background-color: ;
+	background-image: url("../images/painting.jpeg");
+	background-size: cover;
 	z-index: 1;
 }
-
 .navbar li {
 	position: relative;
 	padding: 20px;
@@ -26,14 +24,86 @@ body {
 	list-style: none;
 	float: right;
 }
-
 .navbar li a {
 	color: #EAEAE1;
 	font: 13px 'Aileron';
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
-	text-decoration:none;
+	text-decoration: none;
 }
 .navbar li a:hover {
 	color: rgba(234, 234, 225, .5);
 }
+.logo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 5px 0px 0px 15px;
+}
+.logo img {
+	width: 30px;
+}
+.container {
+	width: 960px;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%);
+	position: absolute;
+	background-color: rgba(255, 255, 255, .5);
+	padding: 10px;
+}
+..buttons {
+	position: absolute;
+	width: 100%;
+	top: 128px;
+}
+.label {
+	background-color: #EAEAE1;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	float: left;
+	padding: 25px;
+	color: #375C38;
+	text-align: center;
+}
+.label:hover {
+	color: #EAEAE1;
+	background-color: #578252;
+	transition: .6s;
+}
+/* content for the label div*/
+.title {
+	font: 20px 'Aileron';
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.subtitle {
+	font: 15px 'Aileron';
+	margin-top: 15px;
+	height: 180px;
+}
+.group {
+	font: 14px 'Aileron';
+	letter-spacing: 2px;
+}
+#r {
+}
+#r:hover {
+	background-color: #375C38;
+}
+#mbti {
+	background-color: rgba(184, 194, 132, 1);
+}
+#mbti:hover {
+	background-color: #375C38;
+}
+#misc {
+	background-color: #578252;
+}
+#misc:hover {
+	background-color: #375C38;
+}
+
+
