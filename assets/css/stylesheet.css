@@ -3,35 +3,34 @@
     src: url("../fonts/aileron/Aileron-Light.otf");
 }
 body {
-	background-image: url("../images/painting.jpeg");
-	background-size: cover;
-	background-color: #6C90A8;
+	padding: 0px;
 	margin: 0px;
+	background-image: url("../images/painting.jpeg");
+	background-repeat: none;
+	background-size: cover;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
 .navbar {
-	position: fixed;
 	top: 0px;
+	position: fixed;
+	background-color: rgba(108, 144, 168, .8);
 	width: 100%;
-	height: 62px;
-	background-image: url("../images/painting.jpeg");
-	background-size: cover;
-	z-index: 1;
+	height: 30px;
+	text-align: center;
+	padding-top: 15px;
 }
-.navbar li {
-	position: relative;
-	padding: 20px;
-	margin: -16px 0px 0px;
-	list-style: none;
+.navbar a {
 	float: right;
-}
-.navbar li a {
-	color: #EAEAE1;
-	font: 13px 'Aileron';
+	padding: 0px 12px 0px;
+	color: rgba(234, 234, 225, 1);
+	font: 12px 'Aileron';
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
 	text-decoration: none;
 }
-.navbar li a:hover {
+.navbar a:hover {
 	color: rgba(234, 234, 225, .5);
 }
 .logo {
@@ -45,17 +44,36 @@ body {
 }
 .container {
 	width: 960px;
+	height: 79%;
 	left: 50%;
-	top: 100px;
+	top: 80px;
 	transform: translateX(-50%);
-	position: absolute;
-	background-color: rgba(255, 255, 255, .5);
+	position: fixed;
 	padding: 10px;
+	overflow: auto;
+	background-color: rgba(234, 234, 225, .5);
 }
-..buttons {
+/* index-page specific code */
+.name {
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;	
+	z-index: 1;
+}
+
+.name img {
+	width: 400px;
+}
+
+.name:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #EAEAE1);
+  filter: drop-shadow(5px 5px 5px #EAEAE1);
+}
+
+/* project-page specific code */
+.labels {
 	position: absolute;
-	width: 100%;
-	top: 128px;
 }
 .label {
 	background-color: #EAEAE1;
@@ -70,9 +88,9 @@ body {
 .label:hover {
 	color: #EAEAE1;
 	background-color: #578252;
-	transition: .6s;
+	transition: .3s;
 }
-/* content for the label div*/
+/* content for the label div */
 .title {
 	font: 20px 'Aileron';
 	text-align: center;
@@ -91,18 +109,18 @@ body {
 #r {
 }
 #r:hover {
-	background-color: #375C38;
+	background-color: #BBBBB4;
 }
 #mbti {
-	background-color: rgba(184, 194, 132, 1);
+	background-color: #cdd4a8;
 }
 #mbti:hover {
-	background-color: #375C38;
+	background-color: #80875c;
 }
-#misc {
-	background-color: #578252;
+#paper {
+	background-color: #ABC0A8;
 }
-#misc:hover {
+#paper:hover {
 	background-color: #375C38;
 }
 
