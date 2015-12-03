@@ -41,17 +41,7 @@ body {
 .logo img {
 	width: 30px;
 }
-.container {
-	width: 960px;
-	height: 79%;
-	left: 50%;
-	top: 80px;
-	transform: translateX(-50%);
-	position: fixed;
-	padding: 10px;
-	overflow: auto;
-	background-color: rgba(234, 234, 225, .5);
-}
+
 /* index-page specific code */
 .name {
 	left: 50%;
@@ -71,6 +61,17 @@ body {
 }
 
 /* project-page specific code */
+.container-projects {
+	width: 960px;
+	height: 79%;
+	left: 50%;
+	top: 80px;
+	transform: translateX(-50%);
+	position: fixed;
+	padding: 10px;
+	overflow: auto;
+	background-color: rgba(234, 234, 225, .5);
+}
 .labels {
 	position: absolute;
 }
@@ -124,7 +125,16 @@ body {
 }
 
 /* about-specific page */
-
+.container-about {
+	width: 960px;
+	height: 640px;
+	left: 50%;
+	top: 80px;
+	transform: translateX(-50%);
+	position: fixed;
+	padding: 10px;
+	background-color: rgba(234, 234, 225, .5);
+}
 .layer {
 	background-color: rgba(234, 234, 225, .8);
 	width: 460px;
@@ -139,13 +149,11 @@ body {
 	width: 400px;
 	float: left;
 }
-
 .name-title {
 	font: 40px 'Aileron';
 	text-transform: uppercase;
 	text-align: center;
 }
-
 .description {
 	font: 16px 'Aileron';
 	line-height: 1.5em;
