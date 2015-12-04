@@ -106,6 +106,15 @@ body {
 	text-align: center;
 }
 /* index-page specific code */
+.image {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.image img {
+	width: 200px;
+	border-radius: 50%;
+	border: 6px double rgba(234, 234, 225, 1);
+}
 .name img {
 	width: 400px;
 }
