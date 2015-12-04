@@ -5,27 +5,28 @@
 body {
 	padding: 0px;
 	margin: 0px;
-	background-image: url("../images/painting.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
-::-webkit-scrollbar { 
-    display: none; 
+html {
+	background: url("../images/painting.jpeg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
 }
 .navbar {
 	top: 0px;
 	position: fixed;
 	background-color: rgba(108, 144, 168, .8);
 	width: 100%;
-	height: 30px;
+	height: 35px;
 	text-align: center;
 	padding-top: 15px;
+	z-index: 3;
 }
 .navbar a {
-	float: right;
 	padding: 0px 12px 0px;
 	color: rgba(234, 234, 225, 1);
-	font: 12px 'Aileron';
+	font: 14px 'Aileron';
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
 	text-decoration: none;
@@ -33,64 +34,128 @@ body {
 .navbar a:hover {
 	color: rgba(234, 234, 225, .5);
 }
-.logo {
-	float: left;
+.navbar-positioner {
+	position: fixed;
+	height: 10px;
+	top: 60px;
+	background-color: red;
+}
+.content {
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }
-.logo img {
-	width: 30px;
-}
-
-/* index-page specific code */
-.name {
+.header-section {
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	position: absolute;	
 	z-index: 1;
 }
-
+.about-section {
+	position: absolute;
+	top: 882px;
+	width: 100%;
+	height: 400px;
+	background-color: rgba(234, 234, 225, .5);
+}
+.about-container {
+	width: 80%;
+	padding: 40px 10% 0px;
+}
+.project-section {
+	position: absolute;
+	top: 1282px;
+	width: 100%;
+	height: 600px;
+	background-color: rgba(234, 234, 225, .9);
+}
+.project-container {
+	width: 1200px;
+	padding: 0px 10% 0px;
+}
+.blog-section {
+	position: absolute;
+	top: 1882px;
+	width: 100%;
+	height: 200px;
+	background-color: rgba(234, 234, 225, .6);
+}
+.blog-container {
+	width: 80%;
+	padding: 0px 10% 0px;
+}
+.detail-section {
+	position: absolute;
+	top: 2082px;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(234, 234, 225, .3);
+}
+.detail-container {
+	width: 80%;
+	padding: 10px 10% 10px;
+	font: 16px 'Aileron';
+	text-align: center;
+}
+/* index-page specific code */
 .name img {
 	width: 400px;
 }
-
-.name:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px #EAEAE1);
-  filter: drop-shadow(5px 5px 5px #EAEAE1);
+.shareicons {
+	text-align: center; 
+} 
+.shareicon2  {
+	border: 4px double rgba(234, 234, 225, 1);
+	color: #abab81;      
+	border-radius: 50%;
+    display: inline-block;
+	width: 20px;
+  	height: 20px;
+ 	padding: 11px;
+    position: relative;
+    background: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 22px 8px;
+}          
+.shareicon2:hover {
+	border: 4px solid rgba(234, 234, 225, .2);
+	background: rgba(234, 234, 225, 1);
+	color: #FFF;
+	top: -2px;
+	transition: all 0.2s ease;
 }
-
-/* project-page specific code */
-.container-projects {
-	width: 960px;
-	height: 79%;
-	left: 50%;
-	top: 80px;
-	transform: translateX(-50%);
-	position: fixed;
+/* about-specific page */
+.picture img {
+	margin: 10px;
+	width: 400px;
+	float: left;
+}
+.name-title {
+	font: 40px 'Aileron';
+	text-transform: uppercase;
+	text-align: center;
+}
+.description {
+	font: 16px 'Aileron';
+	line-height: 1.5em;
 	padding: 10px;
-	overflow: auto;
-	background-color: rgba(234, 234, 225, .5);
 }
-.labels {
-	position: absolute;
-}
+/* project-container specific information */
 .label {
-	background-color: #EAEAE1;
+	text-align: center;
+	float: left;
 	width: 250px;
 	height: 250px;
-	margin: 10px;
-	float: left;
 	padding: 25px;
 	color: #375C38;
-	text-align: center;
 }
 .label:hover {
 	color: #EAEAE1;
 	background-color: #578252;
 	transition: .3s;
 }
-/* content for the label div */
 .title {
 	font: 20px 'Aileron';
 	text-align: center;
@@ -107,6 +172,7 @@ body {
 	letter-spacing: 2px;
 }
 #r {
+	background-color: #EAEAE1;
 }
 #r:hover {
 	background-color: #BBBBB4;
@@ -122,40 +188,4 @@ body {
 }
 #paper:hover {
 	background-color: #375C38;
-}
-
-/* about-specific page */
-.container-about {
-	width: 960px;
-	height: 640px;
-	left: 50%;
-	top: 80px;
-	transform: translateX(-50%);
-	position: fixed;
-	padding: 10px;
-	background-color: rgba(234, 234, 225, .5);
-}
-.layer {
-	background-color: rgba(234, 234, 225, .8);
-	width: 460px;
-	height: 560px;
-	float: right;
-	margin: 10px;
-	color: #375C38;
-	padding: 30px;
-}
-.picture img {
-	margin: 10px;
-	width: 400px;
-	float: left;
-}
-.name-title {
-	font: 40px 'Aileron';
-	text-transform: uppercase;
-	text-align: center;
-}
-.description {
-	font: 16px 'Aileron';
-	line-height: 1.5em;
-	padding: 10px;
 }
