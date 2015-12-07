@@ -4,8 +4,14 @@ $(document).ready(function() {
     ////////////////////////////////////////////
     function parallax() {
         var scrolled = $(window).scrollTop();
-        $("#front-page").css('top', (scrolled * 0.6) + "px");
+        $(".front-page").css('top', (scrolled * 0.6) + "px");
     }
+    // Parallax Function Execution
+    ////////////////////////////////////////////
+    $(window).scroll(function() {
+        parallax();
+    })
+    //
 
     // Top Bar Click Animations
     ////////////////////////////////////////////
@@ -13,27 +19,27 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: (0)}, 500);
     });
 
-    $("#top-bar-short-bio").click(function() {
+    $("#navbar-about").click(function() {
         $('html, body').animate({
-            scrollTop: ($("#short-bio-page").offset().top - 79)
+            scrollTop: ($("#about-section").offset().top - 50)
         }, 500);
     });
     ////////////////////////////////////////////
-    $("#top-bar-my-skills").click(function() {
+    $("#navbar-projects").click(function() {
         $('html, body').animate({
-            scrollTop: ($("#my-skills-page").offset().top - 79)
+            scrollTop: ($("#project-section").offset().top - 50)
         }, 500);
     });
     ////////////////////////////////////////////
-    $("#top-bar-my-work").click(function() {
+    $("#navbar-blog").click(function() {
         $('html, body').animate({
-            scrollTop: ($("#my-work-page").offset().top - 79)
+            scrollTop: ($("#blog-section").offset().top - 50)
         }, 500);
     });
     ////////////////////////////////////////////
-    $("#top-bar-contact-me").click(function() {
+    $("#navbar-resume").click(function() {
         $('html, body').animate({
-            scrollTop: ($("#contact-me-page").offset().top - 79)
+            scrollTop: ($("#resume-section").offset().top - 50)
         }, 500);
     });
     //

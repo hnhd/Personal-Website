@@ -9,43 +9,48 @@ body {
 .background {
 	background: url("../images/painting.jpeg") no-repeat center center fixed; 
 	position: fixed;
-  	height: 800px;
+  	height: 100%;
+  	width: 100%;
 	left: 0;
   	right: 0;
-  	z-index: -3;
-	filter: blur(1px);
- 	-webkit-filter: blur(1px);
+  	z-index: -5;
+	filter: blur(2px);
+ 	-webkit-filter: blur(2px);
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
  	-o-background-size: cover;
   	background-size: cover;
 }
-.navbar {
+.navbar-wrapper {
 	top: 0px;
 	position: fixed;
 	background-color: rgba(108, 144, 168, .8);
 	width: 100%;
 	height: 35px;
 	text-align: center;
+	z-index: 5;
 	padding-top: 15px;
-	z-index: 3;
 }
-.navbar a {
+
+/* .navbar-positioner {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 5px;
+	background-color: red;
+} */
+
+.navbar-button {
 	padding: 0px 12px 0px;
 	color: rgba(234, 234, 225, 1);
 	font: 14px 'Aileron';
 	text-transform: uppercase;
 	letter-spacing: 3.5px;
 	text-decoration: none;
+	display: inline-block;
 }
-.navbar a:hover {
+.navbar-button:hover {
 	color: rgba(234, 234, 225, .5);
-}
-.navbar-positioner {
-	position: fixed;
-	height: 10px;
-	top: 60px;
-	background-color: red;
 }
 .content {
 	position: absolute;
@@ -53,10 +58,10 @@ body {
 	height: 100%;
 }
 .header-section {
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	position: absolute;	
 	z-index: 1;
 }
 .about-section {
@@ -67,6 +72,7 @@ body {
 	background-color: rgba(234, 234, 225, .5);
 }
 .about-container {
+	position: absolute;
 	width: 80%;
 	padding: 40px 10% 0px;
 }
@@ -78,31 +84,39 @@ body {
 	background-color: rgba(234, 234, 225, .9);
 }
 .project-container {
-	width: 1200px;
-	padding: 0px 10% 0px;
+	position: absolute;	
+	width: 85%;
+	margin: 0px 7.5% 0px;
 }
 .blog-section {
 	position: absolute;
 	top: 1882px;
 	width: 100%;
-	height: 200px;
+	height: 800px;
 	background-color: rgba(234, 234, 225, .6);
 }
 .blog-container {
+	position: absolute;
 	width: 80%;
 	padding: 0px 10% 0px;
 }
 .detail-section {
 	position: absolute;
-	top: 2082px;
+	top: 2682px;
 	width: 100%;
 	height: 40px;
-	background-color: rgba(234, 234, 225, .3);
+	background-color: rgba(234, 234, 225, 1);
 }
 .detail-container {
+	position: absolute;
 	width: 80%;
 	padding: 10px 10% 10px;
 	font: 16px 'Aileron';
+	text-align: center;
+}
+.header-title {
+	font: 40px 'Aileron';
+	text-transform: uppercase;
 	text-align: center;
 }
 /* index-page specific code */
@@ -148,11 +162,6 @@ body {
 	width: 400px;
 	float: left;
 }
-.name-title {
-	font: 40px 'Aileron';
-	text-transform: uppercase;
-	text-align: center;
-}
 .description {
 	font: 16px 'Aileron';
 	line-height: 1.5em;
@@ -166,6 +175,7 @@ body {
 	height: 250px;
 	padding: 25px;
 	color: #375C38;
+	text-decoration: none;
 }
 .label:hover {
 	color: #EAEAE1;
@@ -186,6 +196,7 @@ body {
 .group {
 	font: 14px 'Aileron';
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 #r {
 	background-color: #EAEAE1;
