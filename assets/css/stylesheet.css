@@ -175,11 +175,10 @@ body {
 	padding: 10px;
 }
 .description a {
-	color: #EAEAE1;
+	color: #375C38;
 	text-decoration: none;
 }
 .description a:hover {
-	color: #80875c;
 }
 /* project-container specific information */
 .label {
