@@ -1,15 +1,3 @@
-//////
-
-window.onscroll = function() {myFunction();};
-
-function myFunction() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("navbar").className = "navbar-active";
-    } else {
-        document.getElementById("navbar").className = "navbar-inactive";
-    }
-}
-
 ////
 
 $(document).ready(function() {
