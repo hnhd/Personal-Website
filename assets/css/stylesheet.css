@@ -6,6 +6,9 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
+div {
+	font-family: 'Aileron';
+}
 .background {
 	background: url("../images/painting.jpeg") no-repeat center center fixed; 
 	position: fixed;
@@ -76,7 +79,7 @@ body {
 .about-section {
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	background-color: rgba(234, 234, 225, .8);
 }
 .about-container {
@@ -87,7 +90,7 @@ body {
 .resume-section {
 	position: relative;
 	width: 100%;
-	height: 800px;
+	height: 100%;
 	background-color: rgba(234, 234, 225, .6);
 }
 .resume-container {
@@ -98,8 +101,8 @@ body {
 .project-section {
 	position: relative;
 	width: 100%;
-	height: 600px;
-	background-color: rgba(234, 234, 225, .9);
+	height: 100%;
+	background-color: rgba(234, 234, 225, .7);
 }
 .project-container {
 	position: absolute;	
@@ -109,8 +112,8 @@ body {
 .blog-section {
 	position: relative;
 	width: 100%;
-	height: 800px;
-	background-color: rgba(234, 234, 225, .6);
+	height: 100%;
+	background-color: rgba(234, 234, 225, .9);
 }
 .blog-container {
 	position: absolute;
@@ -120,14 +123,14 @@ body {
 .detail-section {
 	position: relative;
 	width: 100%;
-	height: 40px;
+	height: 100%;
 	background-color: rgba(234, 234, 225, 1);
 }
 .detail-container {
 	position: absolute;
 	width: 80%;
 	margin: 10px 10% 10px;
-	font: 16px 'Aileron';
+	font-size: 16px;
 	text-align: center;
 }
 /* home-page specific code */
@@ -159,7 +162,8 @@ body {
 	transition: all 0.2s ease;
 }
 /* about-specific page */
-.image {
+
+/*.image {
 	text-align: center;
 }
 .image img {
@@ -170,29 +174,40 @@ body {
 	margin-right: 150px; 
 	border: 10px double rgba(234, 234, 225, 1);
 }
-.about-content {
-	position: relative;
-	float: left;
-	width: 600px;
-	color: #375C38;
-}
 .header-title {
 	width: 100%;
 	font: 40px 'Aileron';
 	text-transform: lowercase;
 	text-align: center;
 }
-.description {
-	width: 100%;
-	font: 16px 'Aileron';
-	line-height: 1.5em;
-	padding: 10px;
-}
 .description a {
 	color: #375C38;
 	text-decoration: none;
 }
 .description a:hover {
+}*/
+
+.about-content {
+	position: relative;
+	color: #375C38;
+}
+.description {
+	background: rgba(234, 234, 225, .8);
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 20px;
+	margin: 2%;
+	float: left;
+	width: 60%;
+}
+.characteristics {
+	background: rgba(234, 234, 225, .8);
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 20px;
+	margin: 2%;
+	float: left;
+	width: 20%;
 }
 /* project-container specific information */
 .label {
@@ -210,18 +225,18 @@ body {
 	transition: .3s;
 }
 .title {
-	font: 20px 'Aileron';
+	font-size: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
 .subtitle {
-	font: 15px 'Aileron';
+	font-size: 15px;
 	margin-top: 15px;
 	height: 180px;
 }
 .group {
-	font: 14px 'Aileron';
+	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -242,4 +257,50 @@ body {
 }
 #paper:hover {
 	background-color: #375C38;
+}
+/* blog-container specific information */
+.article-left {
+	padding: 20px;
+	margin: 4%;
+	float: left;
+	width: 38%;
+}
+.article-right {
+	padding: 20px;
+	margin: 4%;
+	float: left;
+	width: 38%;
+}
+#title a {
+	font-size: 35px;
+	margin: 20px 0px 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+#date {
+	font-size: 16px;
+	margin: 20px 0px 20px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+#preview {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+#read-more {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 30px 0px 30px;
+	width: 150px;
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 10px;
+}
+#read-more:hover {
+	color: transparent;
+	background-color: black;
+	border-color: black;
 }
