@@ -49,7 +49,7 @@ div {
 	background-color: red;
 } */
 
-.navbar-button {
+.navbar-button, .navbar-button a {
 	padding: 0px 12px 0px;
 	color: rgba(234, 234, 225, 1);
 	font: 14px 'Aileron';
@@ -58,7 +58,7 @@ div {
 	text-decoration: none;
 	display: inline-block;
 }
-.navbar-button:hover {
+.navbar-button:hover, .navbar-button:hover a  {
 	color: rgba(234, 234, 225, .5);
 }
 .content {
@@ -180,10 +180,7 @@ div {
 	text-transform: lowercase;
 	text-align: center;
 }
-.description a {
-	color: #375C38;
-	text-decoration: none;
-}
+
 .description a:hover {
 }*/
 
