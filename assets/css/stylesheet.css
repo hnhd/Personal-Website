@@ -76,12 +76,10 @@ div {
 	width: 100%;
 	height: 100%;
 }
-.front-page {
-}
 .header-section {
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 40%;
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 1;
 }
@@ -116,7 +114,7 @@ div {
 .project-container {
 	position: absolute;	
 	width: 85%;
-	margin: 0px 7.5% 0px;
+	margin: 100px 7.5% 30px;
 }
 .blog-section {
 	position: relative;
@@ -126,13 +124,13 @@ div {
 }
 .blog-container {
 	position: absolute;
-	width: 80%;
-	margin: 0px 10% 0px;
+	width: 85%;
+	margin: 100px 10% 30px;
 }
 .detail-section {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 50px;
 	background-color: rgba(234, 234, 225, 1);
 }
 .detail-container {
@@ -258,41 +256,91 @@ div {
 	transition: .3s;
 }
 .title {
-	font-size: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
-.subtitle {
+.label .title {
+	font-size: 18px;
+	height: 30%;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.label .subtitle {
 	font-size: 15px;
 	margin-top: 15px;
-	height: 180px;
+	height: 55%;
 }
-.group {
+.label .group {
+	height: 20%;
 	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-#r {
+#c1 {
 	background-color: #EAEAE1;
 }
-#r:hover {
+#c1:hover {
 	background-color: #BBBBB4;
 }
-#mbti {
+#c2 {
 	background-color: #cdd4a8;
 }
-#mbti:hover {
+#c2:hover {
 	background-color: #80875c;
 }
-#paper {
+#c3 {
 	background-color: #ABC0A8;
 }
-#paper:hover {
+#c3:hover {
 	background-color: #375C38;
 }
 /* blog-container specific information */
-.article-left {
+.blog-title {
+	position: absolute;
+	margin: 60px;
+	font-size: 20px;
+}
+.article {
+	text-align: center;
+	float: left;
+	width: 320px;
+	height: 320px;
+	padding: 40px;
+	color: #375C38;
+	text-decoration: none;
+	margin: 0px;
+}
+.article:hover {
+	color: var(--text-highlight);
+}
+.article .title {
+	font-size: 20px;
+	height: 30%;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.article .subtitle {
+	font-size: 16px;
+	margin-top: 15px;
+	height: 50%;
+}
+.article .group {
+	height: 10%;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.date {
+	font-size: 11px;
+	height: 10%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/*.article-left {
 	padding: 20px;
 	margin: 4%;
 	float: left;
@@ -303,25 +351,9 @@ div {
 	margin: 4%;
 	float: left;
 	width: 38%;
-}
-#title a {
-	font-size: 35px;
-	margin: 20px 0px 20px;
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
-}
-#date {
-	font-size: 16px;
-	margin: 20px 0px 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-#preview {
-	font-size: 18px;
-	line-height: 1.5em;
-}
-#read-more {
+}*/
+
+/*#read-more {
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -336,4 +368,4 @@ div {
 	color: transparent;
 	background-color: black;
 	border-color: black;
-}
+}*/
