@@ -85,7 +85,7 @@ div {
 .header-section {
 	position: absolute;
 	left: 50%;
-	top: 60%;
+	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 1;
 }
