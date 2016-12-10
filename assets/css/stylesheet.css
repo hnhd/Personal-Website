@@ -106,7 +106,6 @@ div {
 	width: 80%;
 	margin: 40px 10% 0px;
 }
-
 .project-section {
 	position: relative;
 	width: 100%;
@@ -146,7 +145,7 @@ div {
 }
 /* home-page specific code */
 .name img {
-	width: 600px;
+	width: 40vw;
 }
 .shareicons {
 	text-align: center;
