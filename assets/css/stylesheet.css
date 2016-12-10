@@ -45,6 +45,9 @@ div {
 .navbar-inactive {
 	background-color: rgba(108, 144, 168, 0);
 }
+.front-page {
+	height: 100vh;
+}
 .navbar-active {
 	background-color: var(--button-color);
 }
@@ -66,9 +69,6 @@ div {
 	height: 5px;
 	background-color: red;
 } */
-.front-page {
-	height: 100vh;
-}
 .navbar-button, .navbar-button a {
 	padding: 0px 12px 0px;
 	color: var(--text-color);
