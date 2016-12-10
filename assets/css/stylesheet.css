@@ -116,7 +116,9 @@ div {
 .project-container {
 	position: absolute;	
 	width: 1200px;
-	margin: 100px 7.5% 30px;
+	top: 50%;
+	left: 50%;
+	margin: 100px 0 0 -600px;
 }
 .blog-section {
 	position: relative;
