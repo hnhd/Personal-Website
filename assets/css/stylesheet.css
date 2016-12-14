@@ -96,7 +96,7 @@ div {
 	z-index: 1;
 }
 .about-section {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(234, 234, 225, .8);
