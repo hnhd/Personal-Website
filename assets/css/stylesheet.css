@@ -8,7 +8,6 @@
     src: url("../fonts/aileron/Aileron-Light.otf");
 }
 
-
 div {
 	font-family: Arial;
 }
@@ -187,7 +186,7 @@ div {
 .about-section {
 	position: relative;
 	width: 100%;
-	height: 1000px;
+	height: 600px;
 	background-color: var(--text-color-2);
 }
 .about-container {
@@ -195,37 +194,38 @@ div {
 	width: 70vw;
 	top: 50%;
 	left: 50%;
-	margin: -500px 0 0 -35vw;
+	margin: -300px 0 0 -35vw;
 }
 .about-content {
 	position: relative;
 }
-.green-header {
-	position: relative;
-	width: 100%;
-	margin-top: 150px;
-	height: 175px;
-	background-color: red;
-}
 .description {
-	position: relative;
+	float: right;
 	font-size: 1em;
 	line-height: 1.4em;
-	width: 92%;
+	width: 57%;
 	padding: 4%;
 	height: 100%;
+	margin-top: 25px;
 	background-color:var(--text-color);
 }
 .image {
 	position: absolute;
-	left: 50%;
-	margin: 0px 0px 0px -150px;
+	left: 0%;
+	margin: 25px 0px 0px 0px;
 	z-index: 1;
 }
 .image img {
 	width: 300px;
-	border-radius: 50%;
+	border-radius: 0%;
 	border: 10px double var(--text-color);
+}
+.featured-projects {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: var(--text-color);
+	margin: 500px 0px 0px 0px;
 }
 /* project-container specific information */
 .label {
@@ -331,7 +331,47 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 }
+.sorting-button {
+	position: fixed;
+	width: 200px;
+	height: 260px;
+	top: 50%;
+	margin: -100px 0px 0px 4vw;
+	background-color: var(--text-contrast);
+	z-index: 5;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
 
+/*.sort-header {
+	font-family: arial;
+	background-color: var(--text-color-2);
+	text-align: center;
+	height: 30px;
+	margin-bottom: 10px;
+	padding: 5px 0px 5px;
+	text-transform: lowercase;
+	font-size: 1.8em;
+	color: var(--text-contrast);
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 6px;
+}*/
+.sort-item {
+	float: left;
+	margin: 0px 0px 10px;
+	padding: 5px 20px 5px;
+}
+.sort-button {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	float: left;
+}
+.sort-text {
+	margin-left: 30px;
+	color: var(--text-color);
+}
 /*.article {
 	text-align: center;
 	float: left;
